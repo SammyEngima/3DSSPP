@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug with shoulder|Win32">
+      <Configuration>Debug with shoulder</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseFord|Win32">
+      <Configuration>ReleaseFord</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseGM|Win32">
+      <Configuration>ReleaseGM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUM|Win32">
+      <Configuration>ReleaseUM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithShoulder|Win32">
+      <Configuration>ReleaseWithShoulder</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F90B6E4-8142-42A3-95E9-C404B11AA051}</ProjectGuid>
+    <RootNamespace>SSPPApp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithShoulder|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug with shoulder|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseFord|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithShoulder|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug with shoulder|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseFord|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseFord|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGM|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUM|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>3DSSPP</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug with shoulder|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithShoulder|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseFord|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(Configuration);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;nafxcw.lib;libcpmt.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <Version>6</Version>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying resources</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll
+IF NOT EXIST "$(OutDir)"\MaleHominoid.mdp copy "$(SolutionDir)"\MaleHominoid.mdp "$(OutDir)"\MaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\FemaleHominoid.mdp copy "$(SolutionDir)"\FemaleHominoid.mdp "$(OutDir)"\FemaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\shoe.obj copy "$(SolutionDir)"\shoe.obj "$(OutDir)"\shoe.obj
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGM|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(Configuration);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;nafxcw.lib;libcpmt.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <Version>6</Version>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying resources</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll
+IF NOT EXIST "$(OutDir)"\MaleHominoid.mdp copy "$(SolutionDir)"\MaleHominoid.mdp "$(OutDir)"\MaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\FemaleHominoid.mdp copy "$(SolutionDir)"\FemaleHominoid.mdp "$(OutDir)"\FemaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\shoe.obj copy "$(SolutionDir)"\shoe.obj "$(OutDir)"\shoe.obj
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUM|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(Configuration);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;nafxcw.lib;libcpmt.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <Version>6</Version>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying resources</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll
+IF NOT EXIST "$(OutDir)"\MaleHominoid.mdp copy "$(SolutionDir)"\MaleHominoid.mdp "$(OutDir)"\MaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\FemaleHominoid.mdp copy "$(SolutionDir)"\FemaleHominoid.mdp "$(OutDir)"\FemaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\shoe.obj copy "$(SolutionDir)"\shoe.obj "$(OutDir)"\shoe.obj
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;../shoulderAnalysis/muscleForceModel;../shoulderAnalysis/Matlab;../HumosimFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/NXCOMPAT:NO /DYNAMICBASE:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;libfmincon.lib;mclmcrrt.lib;nafxcw.lib;libcpmt.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <Version>6</Version>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <FixedBaseAddress>true</FixedBaseAddress>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying dll and resource files</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll
+IF NOT EXIST "$(OutDir)"\MaleHominoid.mdp copy "$(SolutionDir)"\MaleHominoid.mdp "$(OutDir)"\MaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\FemaleHominoid.mdp copy "$(SolutionDir)"\FemaleHominoid.mdp "$(OutDir)"\FemaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\shoe.obj copy "$(SolutionDir)"\shoe.obj "$(OutDir)"\shoe.obj
+</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;../shoulderAnalysis/muscleForceModel;../shoulderAnalysis/Matlab;../HumosimFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;nafxcwd.lib;libcpmtd.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;libcpmtd.lib;nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy shoulder optimization dll to debug run directory</Message>
+      <Command>IF NOT EXIST "$(ProjectDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(ProjectDir)"\libfmincon.dll
+IF NOT EXIST "$(ProjectDir)"\coefs xcopy /s /i "$(SolutionDir)"\coefs "$(ProjectDir)"\coefs</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug with shoulder|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;../shoulderAnalysis/muscleForceModel;../shoulderAnalysis/Matlab;../HumosimFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>new DEBUG_NEW;SHOULDERDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;libfmincon.lib;mclmcrrt.lib;nafxcwd.lib;libcpmtd.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;libcpmtd.lib;nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy shoulder optimization dll to debug run directory</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SHOULDERDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithShoulder|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../aryLib;../c4eLibNew;../dbsLib;../geoLib;../homLib;../motionLib;../shoulderAnalysis;../shoulderAnalysis/muscleForceModel;../shoulderAnalysis/Matlab;../HumosimFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SHOULDERDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;libfmincon.lib;mclmcrrt.lib;nafxcw.lib;libcpmt.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <Version>6</Version>
+      <AdditionalLibraryDirectories>..\shoulderAnalysis;..\shoulderAnalysis\matlab;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying dll and resource files</Message>
+      <Command>IF NOT EXIST "$(OutDir)"\libfmincon.dll copy "$(SolutionDir)"shoulderAnalysis\libfmincon.dll "$(OutDir)"\libfmincon.dll
+IF NOT EXIST "$(OutDir)"\MaleHominoid.mdp copy "$(SolutionDir)"\MaleHominoid.mdp "$(OutDir)"\MaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\FemaleHominoid.mdp copy "$(SolutionDir)"\FemaleHominoid.mdp "$(OutDir)"\FemaleHominoid.mdp
+IF NOT EXIST "$(OutDir)"\shoe.obj copy "$(SolutionDir)"\shoe.obj "$(OutDir)"\shoe.obj
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>SHOULDERDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AngleCue.cpp" />
+    <ClCompile Include="AnimationBar.cpp" />
+    <ClCompile Include="AVIExporter.cpp" />
+    <ClCompile Include="BatchFile.cpp" />
+    <ClCompile Include="CDIB.CPP" />
+    <ClCompile Include="CQuaternion.cpp" />
+    <ClCompile Include="Dg_GRID.cpp" />
+    <ClCompile Include="Dg_HandLoadSolver.cpp" />
+    <ClCompile Include="Dg_HandSegments.cpp" />
+    <ClCompile Include="Dg_HeadNeck.cpp" />
+    <ClCompile Include="Dg_MOVIE_EXPORT.cpp" />
+    <ClCompile Include="DIB.cpp" />
+    <ClCompile Include="DIBFRAME.CPP" />
+    <ClCompile Include="DIBVIEW.CPP" />
+    <ClCompile Include="DummyFrame.cpp" />
+    <ClCompile Include="DummyView.cpp" />
+    <ClCompile Include="ExportSummary.cpp" />
+    <ClCompile Include="FloatEdit.cpp" />
+    <ClCompile Include="FloatRangeEdit.cpp" />
+    <ClCompile Include="FloatRangeStatic.cpp" />
+    <ClCompile Include="hom.cpp" />
+    <ClCompile Include="Hom_COM.cpp" />
+    <ClCompile Include="Hom_doc.cpp" />
+    <ClCompile Include="Hom_srl_421.cpp" />
+    <ClCompile Include="Hom_srl_431.cpp" />
+    <ClCompile Include="Hom_srl_433.cpp" />
+    <ClCompile Include="Hom_srl_440.cpp" />
+    <ClCompile Include="Hom_srl_600.cpp" />
+    <ClCompile Include="HomDocTemplate.cpp" />
+    <ClCompile Include="HyperlinkStatic.cpp" />
+    <ClCompile Include="InputAuxiliary.cpp" />
+    <ClCompile Include="InsertFramesBox.cpp" />
+    <ClCompile Include="IntEdit.cpp" />
+    <ClCompile Include="IntRangeEdit.cpp" />
+    <ClCompile Include="LimitScaleCtrl.cpp" />
+    <ClCompile Include="Logon.cpp" />
+    <ClCompile Include="Main_frm.cpp" />
+    <ClCompile Include="Mass.cpp" />
+    <ClCompile Include="MotionDialogTab.cpp" />
+    <ClCompile Include="MotionFrameDisplay.cpp" />
+    <ClCompile Include="MotionFrameDisplayDialog.cpp" />
+    <ClCompile Include="MotionHandlingDialog.cpp" />
+    <ClCompile Include="MotionInterpolationDialog.cpp" />
+    <ClCompile Include="MotionReachToGraspDialog.cpp" />
+    <ClCompile Include="MotionSeatedPointDialog.cpp" />
+    <ClCompile Include="MotionTabCtrl.cpp" />
+    <ClCompile Include="MotionTabCtrlSit.cpp" />
+    <ClCompile Include="MotionTabCtrlStand.cpp" />
+    <ClCompile Include="OfflineSafeCFile.cpp" />
+    <ClCompile Include="PrintFrame.cpp" />
+    <ClCompile Include="PrintView.cpp" />
+    <ClCompile Include="QUAD_FRM.CPP" />
+    <ClCompile Include="ReportCoMLocations.cpp" />
+    <ClCompile Include="ReportView.cpp" />
+    <ClCompile Include="SSPPApp_i.c" />
+    <ClCompile Include="StatusBox.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="TestTimer.cpp" />
+    <ClCompile Include="TimelineCtrl.cpp" />
+    <ClCompile Include="ValidEdit.cpp" />
+    <ClCompile Include="ValidStatic.cpp" />
+    <ClCompile Include="ViewComboBox.cpp" />
+    <ClCompile Include="WindowData.cpp" />
+    <ClCompile Include="glHom\math_quaternion.cpp" />
+    <ClCompile Include="glHom\math_vector.cpp" />
+    <ClCompile Include="glHom\model_bone.cpp" />
+    <ClCompile Include="glHom\model_mdp.cpp" />
+    <ClCompile Include="glHom\model_mesh.cpp" />
+    <ClCompile Include="GLObliqueView.cpp" />
+    <ClCompile Include="GLOrthoViews.cpp" />
+    <ClCompile Include="GLStickView.cpp" />
+    <ClCompile Include="GLView.cpp" />
+    <ClCompile Include="PupText.cpp" />
+    <ClCompile Include="Dg_Anthropometry.cpp" />
+    <ClCompile Include="Dg_BatchFile.cpp" />
+    <ClCompile Include="Dg_BodyAngles.cpp" />
+    <ClCompile Include="Dg_BodyAnglesDyn.cpp" />
+    <ClCompile Include="Dg_CameraOblique.cpp" />
+    <ClCompile Include="Dg_Environment.cpp" />
+    <ClCompile Include="Dg_ExportOptions.cpp" />
+    <ClCompile Include="Dg_FactorsFeet.cpp" />
+    <ClCompile Include="Dg_FactorsHands.cpp" />
+    <ClCompile Include="Dg_FactorsPassword.cpp" />
+    <ClCompile Include="Dg_FactorsROM.cpp" />
+    <ClCompile Include="Dg_Gravity.cpp" />
+    <ClCompile Include="Dg_HandAngles.cpp" />
+    <ClCompile Include="Dg_HandLoads.cpp" />
+    <ClCompile Include="Dg_HandLoadsAdv.cpp" />
+    <ClCompile Include="Dg_HandPosture.cpp" />
+    <ClCompile Include="Dg_HWMeans.cpp" />
+    <ClCompile Include="Dg_Intro.cpp" />
+    <ClCompile Include="Dg_JointLoads.cpp" />
+    <ClCompile Include="Dg_License.cpp" />
+    <ClCompile Include="Dg_Light.cpp" />
+    <ClCompile Include="Dg_LockingMode.cpp" />
+    <ClCompile Include="Dg_MotionPrediction.cpp" />
+    <ClCompile Include="Dg_NewRegistration.cpp" />
+    <ClCompile Include="Dg_ObliqueBackground.cpp" />
+    <ClCompile Include="Dg_ObliqueFigure.cpp" />
+    <ClCompile Include="Dg_OffsetCoordinates.cpp" />
+    <ClCompile Include="Dg_OrthoColors.cpp" />
+    <ClCompile Include="Dg_Parameters.cpp" />
+    <ClCompile Include="Dg_PercentileLimits.cpp" />
+    <ClCompile Include="Dg_Population.cpp" />
+    <ClCompile Include="Dg_PopulationEdit.cpp" />
+    <ClCompile Include="Dg_PosturePrediction.cpp" />
+    <ClCompile Include="Dg_PrintReports.cpp" />
+    <ClCompile Include="Dg_RegistrationExpired.cpp" />
+    <ClCompile Include="Dg_RegistrationInfo.cpp" />
+    <ClCompile Include="Dg_SupportSelection.cpp" />
+    <ClCompile Include="Dg_TaskAlreadyOpen.cpp" />
+    <ClCompile Include="Dg_TaskDescription.cpp" />
+    <ClCompile Include="ReportAnalysisSummary.cpp" />
+    <ClCompile Include="ReportAnthropometry.cpp" />
+    <ClCompile Include="ReportBalanceSeated.cpp" />
+    <ClCompile Include="ReportBalanceStanding.cpp" />
+    <ClCompile Include="ReportBalanceUnified.cpp" />
+    <ClCompile Include="ReportFatigue.cpp" />
+    <ClCompile Include="ReportFrame.cpp" />
+    <ClCompile Include="ReportJointForces.cpp" />
+    <ClCompile Include="ReportJointLocations.cpp" />
+    <ClCompile Include="ReportJointMoments.cpp" />
+    <ClCompile Include="ReportLowBack.cpp" />
+    <ClCompile Include="ReportPosture.cpp" />
+    <ClCompile Include="ReportSagittal.cpp" />
+    <ClCompile Include="ReportShoulderAnalysis.cpp" />
+    <ClCompile Include="ReportShoulderGeometry.cpp" />
+    <ClCompile Include="ReportSpinal.cpp" />
+    <ClCompile Include="ReportStrength.cpp" />
+    <ClCompile Include="ReportStrengthDirVectors.cpp" />
+    <ClCompile Include="ReportTaskInputSummary.cpp" />
+    <ClCompile Include="UndoRedo.cpp" />
+    <ClCompile Include="GLBalanceSitting.cpp" />
+    <ClCompile Include="GLBalanceStanding.cpp" />
+    <ClCompile Include="GLBasic.cpp" />
+    <ClCompile Include="GLInteractive.cpp" />
+    <ClCompile Include="GLOblique.cpp" />
+    <ClCompile Include="GLSkeleton.cpp" />
+    <ClCompile Include="GLTopSideFront.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SSPPApp.odl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AngleCue.h" />
+    <ClInclude Include="AnimationBar.h" />
+    <ClInclude Include="AnthroPercentiles.h" />
+    <ClInclude Include="AppVersion.hpp" />
+    <ClInclude Include="Archiver.h" />
+    <ClInclude Include="AVIExporter.h" />
+    <ClInclude Include="BatchFile.hpp" />
+    <ClInclude Include="CDIB.H" />
+    <ClInclude Include="CQuaternion.h" />
+    <ClInclude Include="Dg_GRID.h" />
+    <ClInclude Include="Dg_HandLoadSolver.h" />
+    <ClInclude Include="Dg_HandSegments.h" />
+    <ClInclude Include="Dg_HeadNeck.h" />
+    <ClInclude Include="Dg_MOVIE_EXPORT.h" />
+    <ClInclude Include="DIB.h" />
+    <ClInclude Include="DIBFRAME.H" />
+    <ClInclude Include="DIBVIEW.H" />
+    <ClInclude Include="DummyFrame.h" />
+    <ClInclude Include="DummyView.h" />
+    <ClInclude Include="enums.h" />
+    <ClInclude Include="ExportSummary.hpp" />
+    <ClInclude Include="FloatEdit.h" />
+    <ClInclude Include="FloatRangeEdit.h" />
+    <ClInclude Include="FloatRangeStatic.h" />
+    <ClInclude Include="GlobalFunctions.hpp" />
+    <ClInclude Include="Hom.h" />
+    <ClInclude Include="hom_doc.h" />
+    <ClInclude Include="HomDocTemplate.hpp" />
+    <ClInclude Include="HyperlinkStatic.h" />
+    <ClInclude Include="InputAuxiliary.h" />
+    <ClInclude Include="InsertFramesBox.h" />
+    <ClInclude Include="IntEdit.h" />
+    <ClInclude Include="IntRangeEdit.h" />
+    <ClInclude Include="LimitScaleCtrl.h" />
+    <ClInclude Include="MAIN_FRM.H" />
+    <ClInclude Include="Mass.hpp" />
+    <ClInclude Include="memdc.h" />
+    <ClInclude Include="MotionDialogTab.h" />
+    <ClInclude Include="MotionFrameDisplay.h" />
+    <ClInclude Include="MotionFrameDisplayDialog.h" />
+    <ClInclude Include="MotionHandlingDialog.h" />
+    <ClInclude Include="MotionInterpolationDialog.h" />
+    <ClInclude Include="MotionReachToGraspDialog.h" />
+    <ClInclude Include="MotionSeatedPointDialog.h" />
+    <ClInclude Include="MotionTabCtrl.h" />
+    <ClInclude Include="MotionTabCtrlSit.h" />
+    <ClInclude Include="MotionTabCtrlStand.h" />
+    <ClInclude Include="OfflineSafeCFile.h" />
+    <ClInclude Include="PrintFrame.h" />
+    <ClInclude Include="PrintView.h" />
+    <ClInclude Include="QUAD_FRM.H" />
+    <ClInclude Include="ReportCoMLocations.h" />
+    <ClInclude Include="ReportView.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SSPPApp_h.h" />
+    <ClInclude Include="StatusBox.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestTimer.h" />
+    <ClInclude Include="TimelineCtrl.h" />
+    <ClInclude Include="ValidEdit.h" />
+    <ClInclude Include="ValidStatic.h" />
+    <ClInclude Include="ViewComboBox.h" />
+    <ClInclude Include="WindowData.hpp" />
+    <ClInclude Include="zscores.hpp" />
+    <ClInclude Include="glhom\g_types.h" />
+    <ClInclude Include="glhom\glext.h" />
+    <ClInclude Include="glHom\locals.h" />
+    <ClInclude Include="glHom\mdp_main.h" />
+    <ClInclude Include="glHom\math_misc.h" />
+    <ClInclude Include="glHom\math_quaternion.h" />
+    <ClInclude Include="glHom\math_vector.h" />
+    <ClInclude Include="glHom\model_bone.h" />
+    <ClInclude Include="glHom\model_clothing.h" />
+    <ClInclude Include="glHom\model_mdp.h" />
+    <ClInclude Include="glHom\model_mesh.h" />
+    <ClInclude Include="GLObliqueView.h" />
+    <ClInclude Include="GLOrthoViews.h" />
+    <ClInclude Include="GLStickView.h" />
+    <ClInclude Include="GLView.h" />
+    <ClInclude Include="PupText.h" />
+    <ClInclude Include="Dg_Anthropometry.h" />
+    <ClInclude Include="Dg_BatchFile.h" />
+    <ClInclude Include="Dg_BodyAngles.h" />
+    <ClInclude Include="Dg_BodyAnglesDyn.h" />
+    <ClInclude Include="Dg_CameraOblique.h" />
+    <ClInclude Include="Dg_Environment.h" />
+    <ClInclude Include="Dg_ExportOptions.h" />
+    <ClInclude Include="Dg_FactorsFeet.h" />
+    <ClInclude Include="Dg_FactorsHands.h" />
+    <ClInclude Include="Dg_FactorsPassword.h" />
+    <ClInclude Include="Dg_FactorsROM.h" />
+    <ClInclude Include="Dg_Gravity.h" />
+    <ClInclude Include="Dg_HandAngles.h" />
+    <ClInclude Include="Dg_HandLoads.h" />
+    <ClInclude Include="Dg_HandLoadsAdv.h" />
+    <ClInclude Include="Dg_HandPosture.h" />
+    <ClInclude Include="Dg_HWMeans.h" />
+    <ClInclude Include="Dg_Intro.h" />
+    <ClInclude Include="Dg_JointLoads.h" />
+    <ClInclude Include="Dg_License.h" />
+    <ClInclude Include="Dg_Light.h" />
+    <ClInclude Include="Dg_LockingMode.h" />
+    <ClInclude Include="Dg_MotionPrediction.h" />
+    <ClInclude Include="Dg_NewRegistration.h" />
+    <ClInclude Include="Dg_ObliqueBackground.h" />
+    <ClInclude Include="Dg_ObliqueFigure.h" />
+    <ClInclude Include="Dg_OffsetCoordinates.h" />
+    <ClInclude Include="Dg_OrthoColors.h" />
+    <ClInclude Include="Dg_Parameters.h" />
+    <ClInclude Include="Dg_PercentileLimits.h" />
+    <ClInclude Include="Dg_Population.h" />
+    <ClInclude Include="Dg_PopulationEdit.h" />
+    <ClInclude Include="Dg_PosturePrediction.h" />
+    <ClInclude Include="Dg_PrintReports.h" />
+    <ClInclude Include="Dg_RegistrationExpired.h" />
+    <ClInclude Include="Dg_RegistrationInfo.h" />
+    <ClInclude Include="Dg_SupportSelection.h" />
+    <ClInclude Include="Dg_TaskAlreadyOpen.h" />
+    <ClInclude Include="Dg_TaskDescription.h" />
+    <ClInclude Include="Dg_TaskUnits.h" />
+    <ClInclude Include="ReportAnalysisSummary.h" />
+    <ClInclude Include="ReportAnthropometry.h" />
+    <ClInclude Include="ReportBalanceSeated.h" />
+    <ClInclude Include="ReportBalanceStanding.h" />
+    <ClInclude Include="ReportBalanceUnified.h" />
+    <ClInclude Include="ReportFatigue.h" />
+    <ClInclude Include="ReportFrame.h" />
+    <ClInclude Include="ReportJointForces.h" />
+    <ClInclude Include="ReportJointLocations.h" />
+    <ClInclude Include="ReportJointMoments.h" />
+    <ClInclude Include="ReportLowBack.h" />
+    <ClInclude Include="ReportPosture.h" />
+    <ClInclude Include="ReportSagittal.h" />
+    <ClInclude Include="ReportShoulderAnalysis.h" />
+    <ClInclude Include="ReportShoulderGeometry.h" />
+    <ClInclude Include="ReportSpinal.h" />
+    <ClInclude Include="ReportStrength.h" />
+    <ClInclude Include="ReportStrengthDirVectors.h" />
+    <ClInclude Include="ReportTaskInputSummary.h" />
+    <ClInclude Include="UndoApplied.h" />
+    <ClInclude Include="UndoKeyframe.h" />
+    <ClInclude Include="UndoPosture.h" />
+    <ClInclude Include="UndoRedo.h" />
+    <ClInclude Include="GLBalanceSitting.h" />
+    <ClInclude Include="GLBalanceStanding.h" />
+    <ClInclude Include="GLBasic.h" />
+    <ClInclude Include="GLInteractive.h" />
+    <ClInclude Include="GLOblique.h" />
+    <ClInclude Include="GLSkeleton.h" />
+    <ClInclude Include="GLTopSideFront.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BatchExample.exp" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="resource.hm" />
+    <None Include="res\Finger.CUR" />
+    <None Include="res\HOM.RC2" />
+    <None Include="FemaleHominoid.hom" />
+    <None Include="MaleHominoid.hom" />
+    <None Include="ref.hom" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\3DD.ico" />
+    <Image Include="Res\back.ico" />
+    <Image Include="RES\back_motion.ico" />
+    <Image Include="RES\COG_DOT.ico" />
+    <Image Include="RES\COP_DOT.ico" />
+    <Image Include="RES\COP_DOT1.ICO" />
+    <Image Include="Res\first.ico" />
+    <Image Include="RES\first_motion.ico" />
+    <Image Include="Res\fwd.ico" />
+    <Image Include="res\HOM.ICO" />
+    <Image Include="RES\InterpolationTab.bmp" />
+    <Image Include="Res\last.ico" />
+    <Image Include="RES\last_motion.ico" />
+    <Image Include="RES\next_motion.ico" />
+    <Image Include="Res\pause.ico" />
+    <Image Include="RES\pause_motion.ico" />
+    <Image Include="Res\pause_on.ico" />
+    <Image Include="RES\pause_on_motion.ico" />
+    <Image Include="Res\play.ico" />
+    <Image Include="RES\play_motion.ico" />
+    <Image Include="Res\play_on.ico" />
+    <Image Include="RES\play_on_motion.ico" />
+    <Image Include="RES\ReachToGraspTab.bmp" />
+    <Image Include="Res\rewind.ico" />
+    <Image Include="RES\rewind_motion.ico" />
+    <Image Include="Res\rewind_on.ico" />
+    <Image Include="RES\rewind_on_motion.ico" />
+    <Image Include="RES\SeatedHandlingTab.bmp" />
+    <Image Include="RES\SeatedPointTab.bmp" />
+    <Image Include="RES\Small.ico" />
+    <Image Include="RES\StandingHandlingTab.bmp" />
+    <Image Include="RES\TaskFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HOM.RC" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\aryLib\aryLib.vcxproj">
+      <Project>{ee8041e5-f012-4859-b148-52c5c4a4bdfa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\c4eLibNew\c4eLibNew.vcxproj">
+      <Project>{0d4c6cb6-b433-4211-afd0-38658db5326c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\dbsLib\dbsLib.vcxproj">
+      <Project>{3cca857c-b898-460b-b009-d005f3049638}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\geoLib\geoLib.vcxproj">
+      <Project>{45c10937-a0bb-4c48-aab9-99c7fb4c51c9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\homLib\homLib.vcxproj">
+      <Project>{42c204c2-c46c-4a67-9cba-a75158a3de5f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\HumosimFramework\HumosimFramework.vcxproj">
+      <Project>{23beb156-74db-45da-aa89-90e880dfb790}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\motionLib\motionLib.vcxproj">
+      <Project>{8d7867f8-e7f7-4b83-94f8-e147c75e999d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\shoulderAnalysis\shoulderAnalysis.vcxproj">
+      <Project>{7608bab2-be43-4870-8605-d0c30087fee2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Hom.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

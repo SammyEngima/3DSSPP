@@ -1,0 +1,6 @@
+3DSSPPBATCHFILE #
+COM #
+COM #
+OUT #
+DES 0 "Sample Batch" "Suzy Anybody" "Nothing very meaningful" "Company" #
+AUT 0 #

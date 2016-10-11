@@ -1,0 +1,180 @@
+// um3DSSPP.odl : type library source for um3DSSPP.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (um3DSSPP.tlb).
+
+#include "olectl.h"
+[ uuid(8F41A646-F62A-11D1-9480-000000000000), version(1.30) ]
+library Um3DSSPP
+{
+	importlib("stdole32.tlb");
+
+	//  Primary dispatch interface for C_Hom_Doc
+	
+	[v1_enum, public]
+	typedef [uuid(E17C75AC-4F98-4a74-A3D2-F9A2D51B30CD), helpstring("Angle Identifiers"), public]
+	enum BodySegmentAngle {
+		A_ForearmRV,	A_ForearmRH,
+		A_UpperarmRV,	A_UpperarmRH,
+		A_LowerlegRV,	A_LowerlegRH,
+		A_UpperlegRV,	A_UpperlegRH,
+		A_FootRV,		A_FootRH,
+
+		A_ForearmLV,	A_ForearmLH,
+		A_UpperarmLV,	A_UpperarmLH,
+		A_LowerlegLV,	A_LowerlegLH,
+		A_UpperlegLV,	A_UpperlegLH,
+		A_FootLV,		A_FootLH,
+
+		A_TrunkLateralBending,    
+		A_TrunkFlexion, 
+		A_TrunkAxialRotation,
+
+		A_C4C7LateralBending,
+		A_C4C7Flexion,
+		A_C4C7AxialRotation,
+
+		A_PelvisLateralBending,
+		A_PelvisFlexion,
+		A_PelvisAxialRotation,
+
+		A_HandRV, A_HandRH, A_HandRRot,
+		A_HandLV, A_HandLH, A_HandLRot,
+
+		A_ClavicleRV,  A_ClavicleRH,
+		A_ClavicleLV,  A_ClavicleLH,
+		A_SCJ,
+
+		A_NeckLateralBending,
+		A_NeckFlexion,
+		A_NeckAxialRotation,
+
+		A_C1C3_LateralBending,
+		A_C1C3_Flexion,
+		A_C1C3_AxialRotation,
+
+		A_C1_LateralBending,
+		A_C1_Flexion,
+		A_C1_AxialRotation ,
+
+		A_Nasion_Flexion
+	} BodySegmentAngle;
+
+	[ uuid(8F41A647-F62A-11D1-9480-000000000000)]
+	dispinterface IUm3DSSPP
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(C_Hom_Doc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(C_Hom_Doc)
+			[id(1)] BSTR HelloWorld();
+			[id(2)] VARIANT_BOOL SetTaskDescription(short aUnits, BSTR* aTask, BSTR* aAnalyst, BSTR* aComments);
+			[id(3)] VARIANT_BOOL SetAnthropometry(short aSex, short aPercentile, float aHeight, float aWeight);
+			[id(4)] VARIANT_BOOL SetPopulationDefault();
+			[id(5)] VARIANT_BOOL SetZeroGravity();
+            [id(6)] VARIANT_BOOL PosturePredict(short handOrientation, float LH, float LV, float LL, float RH, float RV, float RL);
+			[id(7)] VARIANT_BOOL SetPopulationFromFile(BSTR* FilePathPtr, BSTR* FileNamePtr);
+            [id(8)] VARIANT_BOOL SetBodySegmentAngles(short aForearmLH, short aForearmLV, short aForearmRH, short aForearmRV, short aUpperarmLH, short aUpperarmLV, short aUpperarmRH, short aUpperarmRV, short aUpperlegLV, short aUpperlegRV, short aLowerlegLV, short aLowerlegRV, short aTrunkFlexion, short aTrunkAxialRotation, short aTrunkLateralBending);
+			[id(9)] VARIANT_BOOL SetHandLoads(double aLeftMagnitude, double aLeftHorizontalAngle, double aLeftVerticalAngle, double aRightMagnitude, double aRightHorizontalAngle, double aRightVerticalAngle);
+			[id(10)] BSTR LastErrorMessage();
+			[id(11)] VARIANT_BOOL GetAnalysisSummaryA(short* aElbowPercentilePtr, BSTR* aElbowLimitPtr, short* aShoulderPercentilePtr, BSTR* aShoulderLimitPtr, short* aTorsoPercentilePtr, BSTR* aTorsoLimitPtr, short* aHipPercentilePtr, BSTR* aHipLimitPtr, short* aKneePercentilePtr, BSTR* aKneeLimitPtr, short* aAnklePercentilePtr, BSTR* aAnkleLimitPtr, short* aWristPercentilePtr, BSTR* aWristLimitPtr);
+			[id(12)] VARIANT_BOOL GetAnalysisSummaryB(float* aLeftHandForceXPtr, float* aLeftHandForceYPtr, float* aLeftHandForceZPtr, float* aLeftHandForceMagPtr, float* aRightHandForceXPtr, float* aRightHandForceYPtr, float* aRightHandForceZPtr, float* aRightHandForceMagPtr, float* aDiscCompressionValuePtr, float* aDiscCompressionDeviationPtr, short* aLeftPercentLoadPtr, short* aRightPercentLoadPtr, BSTR* aBalancePtr, float* aFrictionPtr);
+			[id(13)] VARIANT_BOOL GetAnthropometryA(float* aLowerArmLengthPtr, float* aLowerArmCGPtr, float* aLowerArmWeightPtr, float* aUpperArmLengthPtr, float* aUpperArmCGPtr, float* aUpperArmWeightPtr, float* aL5ToShoulderLengthPtr, float* aL5ToShoulderCGPtr, float* aL5ToShoulderWeightPtr);
+			[id(14)] VARIANT_BOOL GetAnthropometryB(float* aL5AboveWeightPtr, float* aHipToL5LengthPtr, float* aHipToL5CGPtr, float* aHipToL5WeightPtr, float* aHipToShoulderLengthPtr, float* aHipToShoulderCGPtr, float* aHipToShoulderWeightPtr);
+			[id(15)] VARIANT_BOOL GetAnthropometryC(float* aUpperLegLengthPtr, float* aUpperLegCGPtr, float* aUpperLegWeightPtr, float* aLowerLegLengthPtr, float* aLowerLegCGPtr, float* aLowerLegWeightPtr, float* aFootLengthPtr, float* aFootCGPtr, float* aFootWeightPtr, float* aDiaphragmMomentArmPtr);
+			[id(16)] VARIANT_BOOL GetJointMomentsA(float* aLeftElbowXPtr, float* aLeftElbowYPtr, float* aLeftElbowZPtr, float* aRightElbowXPtr, float* aRightElbowYPtr, float* aRightElbowZPtr, float* aLeftShoulderXPtr, float* aLeftShoulderYPtr, float* aLeftShoulderZPtr, float* aRightShoulderXPtr, float* aRightShoulderYPtr, float* aRightShoulderZPtr);
+			[id(17)] VARIANT_BOOL GetJointMomentsB(float* aL5S1XPtr, float* aL5S1YPtr, float* aL5S1ZPtr, float* aLeftHipXPtr, float* aLeftHipYPtr, float* aLeftHipZPtr, float* aRightHipXPtr, float* aRightHipYPtr, float* aRightHipZPtr);
+			[id(18)] VARIANT_BOOL GetJointMomentsC(float* aLeftKneeXPtr, float* aLeftKneeYPtr, float* aLeftKneeZPtr, float* aRightKneeXPtr, float* aRightKneeYPtr, float* aRightKneeZPtr, float* aLeftAnkleXPtr, float* aLeftAnkleYPtr, float* aLeftAnkleZPtr, float* aRightAnkleXPtr, float* aRightAnkleYPtr, float* aRightAnkleZPtr);
+			[id(19)] VARIANT_BOOL GetJointsA(float* aLeftHandXPtr, float* aLeftHandYPtr, float* aLeftHandZPtr, float* aRightHandXPtr, float* aRightHandYPtr, float* aRightHandZPtr, float* aLeftElbowXPtr, float* aLeftElbowYPtr, float* aLeftElbowZPtr, float* aRightElbowXPtr, float* aRightElbowYPtr, float* aRightElbowZPtr);
+			[id(20)] VARIANT_BOOL GetJointsB(float* aLeftShoulderXPtr, float* aLeftShoulderYPtr, float* aLeftShoulderZPtr, float* aRightShoulderXPtr, float* aRightShoulderYPtr, float* aRightShoulderZPtr, float* aL5S1XPtr, float* aL5S1YPtr, float* aL5S1ZPtr, float* aLeftHipXPtr, float* aLeftHipYPtr, float* aLeftHipZPtr, float* aRightHipXPtr, float* aRightHipYPtr, float* aRightHipZPtr);
+			[id(21)] VARIANT_BOOL GetJointsC(float* aLeftKneeXPtr, float* aLeftKneeYPtr, float* aLeftKneeZPtr, float* aRightKneeXPtr, float* aRightKneeYPtr, float* aRightKneeZPtr, float* aLeftAnkleXPtr, float* aLeftAnkleYPtr, float* aLeftAnkleZPtr, float* aRightAnkleXPtr, float* aRightAnkleYPtr, float* aRightAnkleZPtr);
+			[id(22)] VARIANT_BOOL GetLowBackA(float* aLeftErSpiFRPtr, float* aLeftErSpiFSPtr, float* aLeftErSpiXPtr, float* aLeftErSpiYPtr, float* aLeftErSpiZPtr, float* aLeftErSpiMXPtr, float* aLeftErSpiMYPtr, float* aRightErSpiFRPtr, float* aRightErSpiFSPtr, float* aRightErSpiXPtr, float* aRightErSpiYPtr, float* aRightErSpiZPtr, float* aRightErSpiMXPtr, float* aRightErSpiMYPtr);
+			[id(23)] VARIANT_BOOL GetLowBackB(float* aLeftRecAbFRPtr, float* aLeftRecAbFSPtr, float* aLeftRecAbXPtr, float* aLeftRecAbYPtr, float* aLeftRecAbZPtr, float* aLeftRecAbMXPtr, float* aLeftRecAbMYPtr, float* aRightRecAbFRPtr, float* aRightRecAbFSPtr, float* aRightRecAbXPtr, float* aRightRecAbYPtr, float* aRightRecAbZPtr, float* aRightRecAbMXPtr, float* aRightRecAbMYPtr);
+			[id(24)] VARIANT_BOOL GetLowBackC(float* aLeftIntObFRPtr, float* aLeftIntObFSPtr, float* aLeftIntObXPtr, float* aLeftIntObYPtr, float* aLeftIntObZPtr, float* aLeftIntObMXPtr, float* aLeftIntObMYPtr, float* aRightIntObFRPtr, float* aRightIntObFSPtr, float* aRightIntObXPtr, float* aRightIntObYPtr, float* aRightIntObZPtr, float* aRightIntObMXPtr, float* aRightIntObMYPtr);
+			[id(25)] VARIANT_BOOL GetLowBackD(float* aLeftExtObFRPtr, float* aLeftExtObFSPtr, float* aLeftExtObXPtr, float* aLeftExtObYPtr, float* aLeftExtObZPtr, float* aLeftExtObMXPtr, float* aLeftExtObMYPtr, float* aRightExtObFRPtr, float* aRightExtObFSPtr, float* aRightExtObXPtr, float* aRightExtObYPtr, float* aRightExtObZPtr, float* aRightExtObMXPtr, float* aRightExtObMYPtr);
+			[id(26)] VARIANT_BOOL GetLowBackE(float* aLeftLatDorFRPtr, float* aLeftLatDorFSPtr, float* aLeftLatDorXPtr, float* aLeftLatDorYPtr, float* aLeftLatDorZPtr, float* aLeftLatDorMXPtr, float* aLeftLatDorMYPtr, float* aRightLatDorFRPtr, float* aRightLatDorFSPtr, float* aRightLatDorXPtr, float* aRightLatDorYPtr, float* aRightLatDorZPtr, float* aRightLatDorMXPtr, float* aRightLatDorMYPtr);
+			[id(27)] VARIANT_BOOL GetLowBackF(float* aCompressionTotalPtr, float* aShearTotalPtr, float* aShearAntPostPtr, float* aShearLateralPtr);
+			[id(28)] VARIANT_BOOL GetPostureA(short* aLeftElbowIncludedPtr, short* aRightElbowIncludedPtr, short* aLeftShoulderVerticalPtr, short* aRightShoulderVerticalPtr, short* aLeftShoulderHorizontalPtr, short* aRightShoulderHorizontalPtr, short* aLeftHumeralRotationPtr, short* aRightHumeralRotationPtr, short* aLeftHipIncludedPtr, short* aRightHipIncludedPtr, short* aLeftKneeIncludedPtr, short* aRightKneeIncludedPtr, short* aLeftAnkleIncludedPtr, short* aRightAnkleIncludedPtr);
+			[id(29)] VARIANT_BOOL GetPostureB(short* aAdjustedFlexionPtr, short* aAdjustedRotationPtr, short* aAdjustedLateralBendingPtr, short* aPelvicRotationPtr);
+			[id(30)] VARIANT_BOOL GetSagittal(float* aTotalPtr, float* aTotalStdDevPtr, float* aErectorSpinaePtr, float* aErectorSpinaeStdDevPtr, float* aRectusAbdominusPtr, float* aRectusAbdominusStdDevPtr, float* aAbdominalPtr, float* aHandLoadsPtr, float* aUpperBodyWeightPtr, float* aShearTotalPtr, float* aShearSagittalPtr, float* aShearFrontalPtr, short* aEstLigamentStrainPtr);
+			[id(31)] VARIANT_BOOL GetSpinalA(float* aGloL2L3FXPtr, float* aGloL2L3FYPtr, float* aGloL2L3FZPtr, float* aGloL2L3MXPtr, float* aGloL2L3MYPtr, float* aGloL2L3MZPtr, float* aGloL4L5FXPtr, float* aGloL4L5FYPtr, float* aGloL4L5FZPtr, float* aGloL4L5MXPtr, float* aGloL4L5MYPtr, float* aGloL4L5MZPtr);
+			[id(32)] VARIANT_BOOL GetSpinalB(float* aGloL5S1MXPtr, float* aGloL5S1MYPtr, float* aGloL5S1MZPtr, float* aRotL2L3FXPtr, float* aRotL2L3FYPtr, float* aRotL2L3FZPtr, float* aRotL2L3MXPtr, float* aRotL2L3MYPtr, float* aRotL2L3MZPtr);
+			[id(33)] VARIANT_BOOL GetSpinalC(float* aRotL3L4FXPtr, float* aRotL3L4FYPtr, float* aRotL3L4FZPtr, float* aRotL3L4MXPtr, float* aRotL3L4MYPtr, float* aRotL3L4MZPtr, float* aRotL4L5FXPtr, float* aRotL4L5FYPtr, float* aRotL4L5FZPtr, float* aRotL4L5MXPtr, float* aRotL4L5MYPtr, float* aRotL4L5MZPtr);
+			[id(34)] VARIANT_BOOL GetStrengthA(float* aLeftElbFlxExtMMPtr, BSTR* aLeftElbFlxExtMEPtr, float* aLeftElbFlxExtMNPtr, float* aLeftElbFlxExtSDPtr, short* aLeftElbFlxExtCPPtr, float* aRightElbFlxExtMMPtr, BSTR* aRightElbFlxExtMEPtr, float* aRightElbFlxExtMNPtr, float* aRightElbFlxExtSDPtr, short* aRightElbFlxExtCPPtr);
+			[id(35)] VARIANT_BOOL GetStrengthB(float* aLeftShoHumRotMMPtr, BSTR* aLeftShoHumRotMEPtr, float* aLeftShoHumRotMNPtr, float* aLeftShoHumRotSDPtr, short* aLeftShoHumRotCPPtr, float* aRightShoHumRotMMPtr, BSTR* aRightShoHumRotMEPtr, float* aRightShoHumRotMNPtr, float* aRightShoHumRotSDPtr, short* aRightShoHumRotCPPtr);
+			[id(36)] VARIANT_BOOL GetStrengthC(float* aLeftShoBkFdMMPtr, BSTR* aLeftShoBkFdMEPtr, float* aLeftShoBkFdMNPtr, float* aLeftShoBkFdSDPtr, short* aLeftShoBkFdCPPtr, float* aRightShoBkFdMMPtr, BSTR* aRightShoBkFdMEPtr, float* aRightShoBkFdMNPtr, float* aRightShoBkFdSDPtr, short* aRightShoBkFdCPPtr);
+			[id(37)] VARIANT_BOOL GetStrengthD(float* aLeftShoAbAdMMPtr, BSTR* aLeftShoAbAdMEPtr, float* aLeftShoAbAdMNPtr, float* aLeftShoAbAdSDPtr, short* aLeftShoAbAdCPPtr, float* aRightShoAbAdMMPtr, BSTR* aRightShoAbAdMEPtr, float* aRightShoAbAdMNPtr, float* aRightShoAbAdSDPtr, short* aRightShoAbAdCPPtr);
+			[id(38)] VARIANT_BOOL GetStrengthE(float* aTruFlxExtMMPtr, BSTR* aTruFlxExtMEPtr, float* aTruFlxExtMNPtr, float* aTruFlxExtSDPtr, short* aTruFlxExtCPPtr, float* aTruLatBndMMPtr, BSTR* aTruLatBndMEPtr, float* aTruLatBndMNPtr, float* aTruLatBndSDPtr, short* aTruLatBndCPPtr, float* aTruRotMMPtr, BSTR* aTruRotMEPtr, float* aTruRotMNPtr, float* aTruRotSDPtr, short* aTruRotCPPtr);
+			[id(39)] VARIANT_BOOL GetStrengthF(float* aLeftHipFlxExtMMPtr, BSTR* aLeftHipFlxExtMEPtr, float* aLeftHipFlxExtMNPtr, float* aLeftHipFlxExtSDPtr, short* aLeftHipFlxExtCPPtr, float* aRightHipFlxExtMMPtr, BSTR* aRightHipFlxExtMEPtr, float* aRightHipFlxExtMNPtr, float* aRightHipFlxExtSDPtr, short* aRightHipFlxExtCPPtr);
+			[id(40)] VARIANT_BOOL GetStrengthG(float* aLeftKneeFlxExtMMPtr, BSTR* aLeftKneeFlxExtMEPtr, float* aLeftKneeFlxExtMNPtr, float* aLeftKneeFlxExtSDPtr, short* aLeftKneeFlxExtCPPtr, float* aRightKneeFlxExtMMPtr, BSTR* aRightKneeFlxExtMEPtr, float* aRightKneeFlxExtMNPtr, float* aRightKneeFlxExtSDPtr, short* aRightKneeFlxExtCPPtr);
+			[id(41)] VARIANT_BOOL GetStrengthH(float* aLeftAnkFlxExtMMPtr, BSTR* aLeftAnkFlxExtMEPtr, float* aLeftAnkFlxExtMNPtr, float* aLeftAnkFlxExtSDPtr, short* aLeftAnkFlxExtCPPtr, float* aRightAnkFlxExtMMPtr, BSTR* aRightAnkFlxExtMEPtr, float* aRightAnkFlxExtMNPtr, float* aRightAnkFlxExtSDPtr, short* aRightAnkFlxExtCPPtr);
+			[id(42)] VARIANT_BOOL GetStrengthVectorsA(float* aLeftElbFlxExtXPtr, float* aLeftElbFlxExtYPtr, float* aLeftElbFlxExtZPtr, float* aRightElbFlxExtXPtr, float* aRightElbFlxExtYPtr, float* aRightElbFlxExtZPtr);
+			[id(43)] VARIANT_BOOL GetStrengthVectorsB(float* aLeftShoBkFdXPtr, float* aLeftShoBkFdYPtr, float* aLeftShoBkFdZPtr, float* aRightShoBkFdXPtr, float* aRightShoBkFdYPtr, float* aRightShoBkFdZPtr);
+			[id(44)] VARIANT_BOOL GetStrengthVectorsC(float* aLeftShoAbAdXPtr, float* aLeftShoAbAdYPtr, float* aLeftShoAbAdZPtr, float* aRightShoAbAdXPtr, float* aRightShoAbAdYPtr, float* aRightShoAbAdZPtr);
+			[id(45)] VARIANT_BOOL GetStrengthVectorsD(float* aLeftShoHumRotXPtr, float* aLeftShoHumRotYPtr, float* aLeftShoHumRotZPtr, float* aRightShoHumRotXPtr, float* aRightShoHumRotYPtr, float* aRightShoHumRotZPtr);
+			[id(46)] VARIANT_BOOL GetStrengthVectorsE(float* aL5S1FlxExtXPtr, float* aL5S1FlxExtYPtr, float* aL5S1FlxExtZPtr, float* aL5S1LatBndXPtr, float* aL5S1LatBndYPtr, float* aL5S1LatBndZPtr, float* aL5S1RotXPtr, float* aL5S1RotYPtr, float* aL5S1RotZPtr);
+			[id(47)] VARIANT_BOOL GetStrengthVectorsF(float* aLeftHipFlxExtXPtr, float* aLeftHipFlxExYPtr, float* aLeftHipFlxExtZPtr, float* aRightHipFlxExtXPtr, float* aRightHipFlxExtYPtr, float* aRightHipFlxExtZPtr);
+			[id(48)] VARIANT_BOOL GetStrengthVectorsG(float* aLeftKneeFlxExtXPtr, float* aLeftKneeFlxExtYPtr, float* aLeftKneeFlxExtZPtr, float* aRightKneeFlxExtXPtr, float* aRightKneeFlxExtYPtr, float* aRightKneeFlxExtZPtr);
+			[id(49)] VARIANT_BOOL GetStrengthVectorsH(float* aLeftAnkleFlxExtXPtr, float* aLeftAnkleFlxExtYPtr, float* aLeftAnkleFlxExtZPtr, float* aRightAnkleFlxExtXPtr, float* aRightAnkleFlxExtYPtr, float* aRightAnkleFlxExtZPtr);
+			[id(50)] VARIANT_BOOL GetTaskInputSummaryA(short* aLeftForeArmHPtr, short* aLeftForeArmVPtr, short* aRightForeArmHPtr, short* aRightForeArmVPtr, short* aLeftUpperArmHPtr, short* aLeftUpperArmVPtr, short* aRightUpperArmHPtr, short* aRightUpperArmVPtr, short* aLeftUpperLegVPtr, short* aRightUpperLegVPtr, short* aLeftLowerLegVPtr, short* aRightLowerLegVPtr, short* aTrunkFlexionPtr, short* aTrunkRotationPtr, short* aTrunkBendingPtr);
+			[id(51)] VARIANT_BOOL GetTaskInputSummaryB(BSTR* aHandOrientationPtr, float* aLeftHandLocHPtr, float* aLeftHandLocVPtr, float* aLeftHandLocLPtr, float* aRightHandLocHPtr, float* aRightHandLocVPtr, float* aRightHandLocLPtr, short* aLeftForceAngHPtr, short* aLeftForceAngVPtr, float* aLeftForceMagPtr, short* aRightForceAngHPtr, short* aRightForceAngVPtr, float* aRightForceMagPtr);
+			[id(52)] VARIANT_BOOL GetFatigueReport(VARIANT_BOOL left, SHORT population_strength_percentile, SHORT* ElbowFlex, SHORT* ShoulderHumRot, SHORT* ShoulderBackFwd, SHORT* ShoulderAbdAdd, SHORT* TorsoFlex, SHORT* TorsoLatBend, SHORT* TorsoRot, SHORT* HipFlex, SHORT* KneeFlex, SHORT* AnkleFlex);
+			[id(53)] VARIANT_BOOL IsRegistered(void);
+			[id(54)] VARIANT_BOOL SetAngle(long angle, double value);
+			[id(55)] VARIANT_BOOL GetAngle(long angle, double* value);
+			[id(56)] VARIANT_BOOL SetBodySegmentAnglesWithLegs(
+				short aForearmLH,
+				short aForearmLV,
+				short aForearmRH,
+				short aForearmRV,
+				short aUpperarmLH,
+				short aUpperarmLV,
+				short aUpperarmRH,
+				short aUpperarmRV,
+				short aUpperlegLV,
+				short aUpperlegLH,
+				short aUpperlegRV,
+				short aUpperlegRH,
+				short aLowerlegLV,
+				short aLowerlegLH,
+				short aLowerlegRV,
+				short aLowerlegRH,
+				short aTrunkFlexion,
+				short aTrunkAxialRotation,
+				short aTrunkLateralBending);
+			//}}AFX_ODL_METHOD
+	};
+
+
+	//  Class information for C_Hom_Doc
+	
+	[ uuid(8F41A650-F62A-11D1-9480-000000000000) ]
+	coclass Um3DSSPP
+	{
+		[default] dispinterface IUm3DSSPP;
+	};
+
+	//  Primary dispatch interface for asdasd
+		
+	[ uuid(49406A03-8404-4234-8764-81B9D58E5394) ]
+	dispinterface Iasdasd
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for asdasd
+
+	[ uuid(E411E8E0-642F-4EE7-91CF-7EECA27BB5E0) ]
+	coclass asdasd
+	{
+		[default] dispinterface Iasdasd;
+	};
+};
+

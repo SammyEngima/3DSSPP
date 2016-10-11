@@ -1,0 +1,32 @@
+Root
+1	1	1	1
+Torso
+1	1	1	1
+Left Clavicle
+1	1	1	1
+Left Upper Arm
+1	1	1	1
+Left Lower Arm
+1	1	1	1
+Left Wrist
+1	1	1	1
+Right Clavicle
+1	1	1	1
+Right Upper Arm
+1	1	1	1
+Right Lower Arm
+1	1	1	1
+Right Wrist
+1	1	1	1
+Right Hip
+1	1	1	1
+Left Hip
+1	1	1	1
+Left Upper Leg
+1	1	1	1
+Left Lower Leg
+1	1	1	1
+Right Upper Leg
+1	1	1	1
+Right Lower Leg
+1	1	1	1
